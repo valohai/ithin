@@ -1,5 +1,6 @@
 import click
 import pickle
+import os
 
 from ithin.summarizer import make_summary_html
 from ithin.processor import get_images, IthinProcessor
