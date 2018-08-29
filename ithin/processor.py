@@ -6,7 +6,7 @@ def get_images(directory):
     images = [
         f.name
         for f in (f for f in os.scandir(directory) if f.is_file())
-        if os.path.splitext(f.name)[1] in ('.jpg', '.jpeg')
+        if os.path.splitext(f.name)[1] in ('.jpg', '.jpeg', '.png')
            and not f.name.startswith('.')
     ]
     images.sort()

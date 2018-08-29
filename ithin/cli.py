@@ -16,7 +16,7 @@ def process(directory, threshold, output, size):
     Process a directoryful of images into a pickle file of groups
     """
     images = get_images(directory)
-    print('%d JPEGs found.' % len(images))
+    print('%d images found.' % len(images))
     proc = IthinProcessor(threshold=threshold, size=size)
     with click.progressbar(images, width=50) as images:
         for filename in images:
